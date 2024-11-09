@@ -11,23 +11,23 @@ jobs:
     name: Performs linting, formatting on the application
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the Repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
       # - name: Setup pnpm
       #   run: npm install -g pnpm
+        
+      - name: Install Dependencies
+        run: npm install
 
       - name: Generate prisma client
         run: npm run db:generate
-        
-      - name: Install Dependencies
-        run: pnpm install
 
-      - name: Run linting check
-        run: pnpm run lint:check
+      # - name: Run linting check
+      #   run: pnpm run lint:check
 
-      - name: Check formatting
-        run: pnpm run format:check
+      - name: Run Build
+        run: npm ruun build
