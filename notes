@@ -1,0 +1,9 @@
+1.cloning the repo
+2.npm install
+3.cd packages/db
+4.adding a .env file with the database url, getting a database from neon.tech/docker
+5.npx prisma migrate dev
+6.npx prisma generate
+7.Add .env file to app/user-app
+8.npm run dev
+  
