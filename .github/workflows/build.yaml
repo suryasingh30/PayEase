@@ -30,4 +30,4 @@ jobs:
       #   run: pnpm run lint:check
 
       - name: Run Build
-        run: npm ruun build
+        run: npm run build
