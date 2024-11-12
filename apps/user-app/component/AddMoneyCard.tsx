@@ -45,7 +45,7 @@ export const AddMoney = () => {
                     await onCreateRamptransaction(provider, value)
                     window.location.href = redirectUrl || ""; 
                 }}>
-                Add Money here
+                Add Money
                 </Button>
             </div>
         </div>
