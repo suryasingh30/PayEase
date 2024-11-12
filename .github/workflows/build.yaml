@@ -2,7 +2,7 @@ name: Linting and formatting on PR
 on:
   pull_request:
     branches:
-      - '**'
+      - master
 
 jobs:
 
